@@ -1,0 +1,411 @@
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1120;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =====================================
+   BARRA DE NAVEGACIÓN
+===================================== */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101a2d;
+    border-bottom: 1px solid #263750;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #d5e1f0;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #38c9f5;
+}
+
+
+/* =====================================
+   PORTADA PRINCIPAL
+===================================== */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 12, 28, 0.95),
+            rgba(5, 12, 28, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1614728263952-84ea256f9679")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #38c9f5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #d1d9e6;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #16bce8;
+    color: #061323;
+    padding: 15px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   INTRODUCCIÓN
+===================================== */
+
+.introduction {
+    padding: 85px 10%;
+    text-align: center;
+    background-color: #111d31;
+}
+
+.introduction h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    max-width: 850px;
+    margin: auto;
+    color: #bdc8d8;
+    font-size: 16px;
+}
+
+
+/* =====================================
+   SECCIONES LUNA Y MARTE
+===================================== */
+
+.worlds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 80px 8%;
+    background-color: #0b1120;
+}
+
+.world-card {
+    min-height: 350px;
+    padding: 45px 35px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.moon-card {
+    background:
+        linear-gradient(
+            rgba(8, 17, 34, 0.85),
+            rgba(8, 17, 34, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa")
+        center/cover;
+}
+
+.mars-card {
+    background:
+        linear-gradient(
+            rgba(8, 17, 34, 0.80),
+            rgba(8, 17, 34, 0.80)
+        ),
+        url("https://images.unsplash.com/photo-1614728894747-a83421e2b9c9")
+        center/cover;
+}
+
+.world-card h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.world-card p {
+    color: #d1d9e6;
+    margin-bottom: 25px;
+}
+
+.world-card a {
+    color: #38c9f5;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.world-card a:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================
+   ARCHIVO DE EQUIPOS
+===================================== */
+
+.equipment {
+    padding: 85px 8%;
+    background-color: #101a2d;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #bdc8d8;
+    font-size: 16px;
+}
+
+
+/* =====================================
+   BOTONES DE FILTRO
+===================================== */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    border: 1px solid #38c9f5;
+    border-radius: 25px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #16bce8;
+    color: #061323;
+}
+
+
+/* =====================================
+   TARJETAS DE EQUIPOS
+===================================== */
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.equipment-card {
+    background-color: #1b2a40;
+    border: 1px solid #344761;
+    border-radius: 15px;
+    padding: 28px;
+    transition: 0.3s;
+}
+
+.equipment-card:hover {
+    transform: translateY(-7px);
+    border-color: #38c9f5;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.equipment-card h3 {
+    color: #ffffff;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.equipment-card p {
+    color: #bdc8d8;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.equipment-card .tag {
+    font-size: 12px;
+}
+
+.location {
+    color: #38c9f5 !important;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   MISIÓN DEL PROYECTO
+===================================== */
+
+.mission {
+    padding: 85px 10%;
+    text-align: center;
+    background-color: #0b1120;
+}
+
+.mission h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.mission p {
+    max-width: 750px;
+    margin: auto;
+    color: #bdc8d8;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   PIE DE PÁGINA
+===================================== */
+
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    background-color: #101a2d;
+    border-top: 1px solid #263750;
+}
+
+footer p {
+    color: #9eafc5;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+
+/* =====================================
+   DISEÑO PARA CELULARES
+===================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .worlds {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+    }
+
+    .world-card {
+        min-height: 300px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .introduction h2,
+    .mission h2 {
+        font-size: 25px;
+    }
+
+    .equipment {
+        padding: 60px 6%;
+    }
+
+}

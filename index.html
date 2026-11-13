@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explora la historia de los equipos y máquinas espaciales que permanecen en la Luna y Marte.">
+
+    <title>SPACE LEGACY | Exploración espacial</title>
+
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            🚀 SPACE LEGACY
+        </a>
+
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#moon">Luna</a>
+            <a href="#mars">Marte</a>
+            <a href="#equipment">Equipos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    NASA SPACE APPS CHALLENGE 2026
+                </span>
+
+                <h1>
+                    ABANDONADOS,
+                    <br>
+                    PERO NO OLVIDADOS
+                </h1>
+
+                <p>
+                    Descubre las máquinas olvidadas que exploraron
+                    la Luna y Marte. Cada equipo tiene una historia
+                    que merece ser contada.
+                </p>
+
+                <a href="#equipment" class="main-button">
+                    EXPLORAR EL LEGADO
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="introduction">
+
+            <h2>EL LEGADO DE LA EXPLORACIÓN ESPACIAL</h2>
+
+            <p>
+                Desde el comienzo de la exploración espacial,
+                diferentes misiones han enviado máquinas y equipos
+                a otros mundos. Algunos terminaron sus misiones,
+                pero permanecen en la superficie, conservando
+                parte de la historia de la humanidad.
+            </p>
+
+        </section>
+
+
+        <!-- SECCIÓN DE LA LUNA Y MARTE -->
+        <section class="worlds" id="moon">
+
+            <article class="world-card moon-card">
+
+                <span class="tag">
+                    01 / SATÉLITE NATURAL DE LA TIERRA
+                </span>
+
+                <h2>LA LUNA</h2>
+
+                <p>
+                    Conoce los equipos e instrumentos que quedaron
+                    en la superficie lunar después de las misiones
+                    espaciales.
+                </p>
+
+                <a href="#equipment">
+                    DESCUBRIR HISTORIA LUNAR →
+                </a>
+
+            </article>
+
+
+            <article class="world-card mars-card" id="mars">
+
+                <span class="tag">
+                    02 / EL PLANETA ROJO
+                </span>
+
+                <h2>MARTE</h2>
+
+                <p>
+                    Descubre los vehículos robóticos que exploraron
+                    Marte y ayudaron a conocer sus características.
+                </p>
+
+                <a href="#equipment">
+                    DESCUBRIR HISTORIA MARCIANA →
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- ARCHIVO DE EQUIPOS -->
+        <section class="equipment" id="equipment">
+
+            <div class="section-heading">
+
+                <span class="tag">
+                    ARCHIVO DE TECNOLOGÍA ESPACIAL
+                </span>
+
+                <h2>Equipos que hicieron historia</h2>
+
+                <p>
+                    Explora los vehículos, instrumentos y máquinas
+                    que permanecen en la Luna y Marte después
+                    de sus misiones.
+                </p>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filters">
+
+                <button class="filter-btn active"
+                    data-filter="todos">
+                    Todos
+                </button>
+
+                <button class="filter-btn"
+                    data-filter="luna">
+                    Luna
+                </button>
+
+                <button class="filter-btn"
+                    data-filter="marte">
+                    Marte
+                </button>
+
+            </div>
+
+
+            <!-- TARJETAS GENERADAS CON JAVASCRIPT -->
+            <div class="equipment-grid" id="equipmentGrid">
+
+                <!-- Los equipos aparecerán automáticamente -->
+
+            </div>
+
+        </section>
+
+
+        <!-- MISIÓN DEL PROYECTO -->
+        <section class="mission">
+
+            <h2>CADA MÁQUINA TIENE UNA HISTORIA</h2>
+
+            <p>
+                Nuestra misión es conservar la historia de la
+                exploración espacial e inspirar a las nuevas
+                generaciones de científicos e ingenieros.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            SPACE LEGACY | NASA SPACE APPS CHALLENGE 2026
+        </p>
+
+        <p>
+            Proyecto educativo sobre la historia de la
+            exploración espacial.
+        </p>
+
+    </footer>
+
+
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+</html>
